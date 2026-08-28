@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生鲜内容营销必做四步法</title>
+<style>
+:root{
+  --blue:#1769e0;
+  --blue-dark:#092c66;
+  --blue-deep:#061b3d;
+  --cyan:#1aa7c8;
+  --green:#20a568;
+  --fresh:#168a62;
+  --orange:#f47b20;
+  --yellow:#ffcd4b;
+  --ink:#10213a;
+  --text:#42526a;
+  --muted:#73829a;
+  --line:#dbe5f2;
+  --soft:#f4f8fc;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{background:#dfe7f1;scroll-behavior:smooth}
+body{margin:0;padding:28px;color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 10% 0%,#f4f8ff 0,transparent 32%),#dfe7f1}
+.page{width:1920px;max-width:100%;margin:0 auto;background:#fff;box-shadow:0 28px 90px rgba(5,28,65,.20);overflow:visible}
+.hero{position:relative;padding:54px 72px 44px;color:#fff;background:linear-gradient(125deg,#061b3d 0%,#0b397b 52%,#1769e0 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;width:720px;height:720px;right:-180px;top:-390px;border:1px solid rgba(255,255,255,.13);border-radius:50%;box-shadow:0 0 0 90px rgba(255,255,255,.035),0 0 0 190px rgba(255,255,255,.025)}
+.hero:after{content:"";position:absolute;width:360px;height:360px;left:58%;bottom:-280px;border-radius:50%;background:#38d6bb;filter:blur(20px);opacity:.15}
+.brandline{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;margin-bottom:36px}
+.logo{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:900;letter-spacing:.08em}
+.logo-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#41e0c0,#3b8cff);box-shadow:0 8px 24px rgba(36,206,194,.28)}
+.logo-mark:before{content:"T";font:900 23px/1 Arial;color:#fff}
+.eyebrow{padding:8px 15px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);font-size:15px;font-weight:700;letter-spacing:.08em}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:52px;align-items:end}
+h1{margin:0;font-size:66px;line-height:1.07;letter-spacing:-.045em;font-weight:950}
+h1 span{display:block;margin-top:10px;background:linear-gradient(90deg,#54e7c2,#8fc5ff,#ffdd76);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-copy{margin:24px 0 0;max-width:980px;font-size:22px;line-height:1.65;color:#dceaff;font-weight:600}
+.hero-copy strong{color:#fff}
+.hero-right{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.north-card{min-height:176px;padding:22px 16px;border:1px solid rgba(255,255,255,.20);border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.06));backdrop-filter:blur(12px)}
+.north-card .num{font-size:13px;font-weight:900;color:#8fc5ff}
+.north-card h3{margin:18px 0 8px;font-size:28px;line-height:1.1}
+.north-card p{margin:0;color:#c9daf3;font-size:15px;line-height:1.5}
+.north-card:last-child{border-color:rgba(255,217,91,.45);background:linear-gradient(160deg,rgba(255,202,69,.24),rgba(255,255,255,.06))}
+.wake-up{display:grid;grid-template-columns:1fr 76px 1fr;align-items:center;padding:25px 72px;background:#eef5ff;border-bottom:1px solid #d6e5fb}
+.wake-group{display:flex;align-items:center;gap:15px}
+.wake-label{flex:0 0 auto;padding:7px 11px;border-radius:8px;background:#dbe8f8;color:#486078;font-size:13px;font-weight:900}
+.wake-label.good{background:#d7f5e9;color:#08714a}
+.wake-text{font-size:19px;font-weight:850;color:#344963}
+.wake-text i{font-style:normal;color:#8696aa;text-decoration:line-through;text-decoration-thickness:2px}
+.wake-arrow{display:grid;place-items:center;width:48px;height:48px;margin:auto;border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));font-size:25px;font-weight:900;box-shadow:0 8px 20px rgba(23,105,224,.22)}
+.doc-nav{position:sticky;top:0;z-index:1000;display:grid;grid-template-columns:auto 1fr auto 1.2fr;gap:12px;align-items:center;padding:12px 50px;background:rgba(255,255,255,.96);border-bottom:1px solid #d8e4f1;box-shadow:0 10px 28px rgba(10,42,80,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.nav-group-label{padding:7px 11px;border-radius:9px;background:#092f63;color:#fff;font-size:12px;font-weight:950;white-space:nowrap}.nav-group-label.how{background:#087456}
+.nav-links{display:flex;gap:7px;align-items:center;min-width:0}.nav-links a{display:block;padding:8px 11px;border:1px solid #dce6f1;border-radius:9px;background:#f8fbff;color:#53677f;text-decoration:none;font-size:12px;font-weight:850;white-space:nowrap;transition:.18s}.nav-links a:hover,.nav-links a.active{color:#fff;background:#1769e0;border-color:#1769e0;box-shadow:0 5px 14px rgba(23,105,224,.22)}.nav-links.how a:hover,.nav-links.how a.active{background:#0a8b68;border-color:#0a8b68;box-shadow:0 5px 14px rgba(10,139,104,.20)}
+.why-section{margin-bottom:28px;padding:30px;border:1px solid #d8e5f2;border-radius:24px;background:linear-gradient(135deg,#f7fbff 0%,#f4fcf8 100%);box-shadow:0 12px 34px rgba(25,59,97,.07);scroll-margin-top:78px}
+.why-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:22px}
+.why-title{max-width:920px}.why-title h2{font-size:34px}.why-title h2 strong{color:#0d8060}
+.why-title p{margin:10px 0 0;color:#566a82;font-size:16px;line-height:1.55;font-weight:650}
+.why-flow{display:grid;grid-template-columns:1fr 54px 1fr 54px 1.12fr;align-items:stretch}
+.why-card{padding:20px;border:1px solid #dce7f2;border-radius:17px;background:#fff;min-height:156px}
+.why-card small{font-size:11px;letter-spacing:.12em;font-weight:950;color:#7b8da3}
+.why-card h3{margin:10px 0 9px;font-size:21px}.why-card p{margin:0;color:#607188;font-size:13px;line-height:1.6;font-weight:650}
+.why-card.risk{border-color:#f2d8c5;background:#fffaf5}.why-card.risk h3{color:#b55c18}
+.why-card.answer{border-color:#bfe4d7;background:linear-gradient(145deg,#effaf6,#fff)}.why-card.answer h3{color:#087456}
+.why-next{display:grid;place-items:center;color:#75a0cd;font-size:28px;font-weight:950}
+.why-quote{margin-top:15px;padding:13px 18px;border-radius:12px;background:#092f63;color:#fff;text-align:center;font-size:16px;line-height:1.5;font-weight:900}
+.ecosystem-bridge{margin-top:20px;padding-top:19px;border-top:1px dashed #c9d8e8}.ecosystem-head{text-align:center;margin-bottom:14px}.ecosystem-head h3{margin:0;font-size:24px;color:#0d3f75}.ecosystem-head p{margin:7px auto 0;max-width:1080px;color:#5d7088;font-size:14px;line-height:1.55;font-weight:650}
+.ecosystem-cases{display:grid;grid-template-columns:.9fr 1.1fr;gap:14px;align-items:stretch}.eco-case{display:flex;flex-direction:column;padding:16px;border:1px solid #dce7f2;border-radius:17px;background:#fff}.eco-case-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:9px}.eco-case-head h4{margin:0;font-size:19px}.eco-case-head span{padding:5px 8px;border-radius:999px;background:#edf5ff;color:#1769e0;font-size:10px;font-weight:900;white-space:nowrap}.eco-case>p{margin:auto 0 0;padding-top:10px;color:#5c6e84;font-size:13px;line-height:1.55;font-weight:650}.tea-pair{display:grid;grid-template-columns:repeat(2,180px);justify-content:center;gap:10px;margin:9px 0}.tea-pair figure,.sea-layout figure{margin:0;overflow:hidden;border:1px solid #e0e8f1;border-radius:11px;background:#edf2f7}.tea-pair img{display:block;width:100%;height:auto;object-fit:contain}.tea-pair figcaption,.sea-layout figcaption{padding:7px;background:#edf4fb;color:#48627e;text-align:center;font-size:10px;font-weight:850}
+.sea-layout{display:grid;grid-template-columns:180px minmax(0,1fr);gap:10px;align-items:start;margin:9px 0}.sea-layout img{display:block;width:100%;height:auto;object-fit:contain}.sea-mini{display:flex;flex-direction:column;height:416px;padding:10px 12px;border:1px solid #e1e9f2;border-radius:11px;background:#f7fafc}.sea-mini h5{margin:0 0 5px;color:#39536f;font-size:12px}.sea-mini svg{width:100%;flex:1;min-height:0}.eco-conclusion{margin-top:13px;padding:12px 15px;border-radius:11px;background:linear-gradient(100deg,#0b3c76,#0b7a6a);color:#fff;text-align:center;font-size:14px;font-weight:900}
+.persona-subhead{margin-top:22px;padding-top:20px;border-top:1px dashed #c9d8e8;text-align:center;scroll-margin-top:78px}.persona-subhead h3{margin:0;font-size:24px;color:#0d3f75}.persona-subhead p{margin:8px auto 0;max-width:980px;color:#5d7088;font-size:14px;line-height:1.6;font-weight:650}
+.persona-why{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.persona-path{position:relative;padding:20px 22px 20px 78px;border:1px solid #dce7f2;border-radius:17px;background:#fff;min-height:132px}
+.persona-path .path-no{position:absolute;left:20px;top:20px;display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#e8f2ff;color:#1769e0;font-weight:950}
+.persona-path.brand .path-no{background:#e7f8f1;color:#087456}
+.persona-path h3{margin:0 0 7px;font-size:20px}.persona-path p{margin:0;color:#5d7088;font-size:13px;line-height:1.6;font-weight:650}
+.ai-trust{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;margin-top:14px;padding:17px 20px;border:1px solid #d9cff7;border-radius:16px;background:linear-gradient(110deg,#f5f1ff,#f0f8ff)}
+.ai-badge{padding:9px 12px;border-radius:10px;background:#6546b8;color:#fff;font-size:11px;line-height:1.25;font-weight:950;text-align:center;letter-spacing:.07em}
+.ai-trust h3{margin:0 0 5px;font-size:19px;color:#3e2f76}.ai-trust p{margin:0;color:#5d6380;font-size:13px;line-height:1.55;font-weight:650}
+.ai-points{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.ai-points span{padding:6px 9px;border-radius:999px;background:#fff;border:1px solid #d9d2ee;color:#59468f;font-size:11px;font-weight:850}
+.persona-formula{margin-top:14px;padding:14px 18px;border-radius:14px;background:linear-gradient(100deg,#092f63,#0b6b6b);color:#fff;text-align:center;font-size:16px;font-weight:900;letter-spacing:.02em}
+.persona-formula span{color:#65e4c6}
+.roadmap-next{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:13px;padding:11px 15px;border:1px dashed #9db8d7;border-radius:12px;background:#f3f8fe;color:#52708f;font-size:13px;font-weight:800}.roadmap-next b{color:#1769e0;font-size:20px}.roadmap-next a{padding:7px 12px;border-radius:9px;background:#1769e0;color:#fff;text-decoration:none;font-weight:900}
+.stage-priority-head{display:block;margin-bottom:16px}.stage-priority-head>div{width:100%}.stage-priority-head .section-desc{width:100%;max-width:100%;margin-top:8px;text-align:left;white-space:nowrap;font-size:15px}.balanced-title{display:flex;align-items:center;gap:5px;white-space:nowrap;font-size:clamp(26px,1.75vw,32px)}.balanced-title i{color:#91a5bc;font-style:normal;font-weight:500}.priority-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:0 0 13px;padding:11px 15px;border-radius:12px;background:#eef6ff;color:#31577f;font-size:13px;line-height:1.5;font-weight:750}.priority-intro b{color:#0d3f75;font-size:15px}.priority-intro span{color:#1769e0;font-weight:900;white-space:nowrap}
+.priority-map{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:17px}.priority-row{position:relative;padding:15px;border:1px solid #dce6f1;border-radius:15px;background:#fff;overflow:hidden}.priority-row:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:#8193a8}.priority-row.p1:before{background:#2b83eb}.priority-row.p2:before{background:#18a985}.priority-row.p3:before{background:#f5a623}.priority-stage{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.priority-stage b{font-size:17px}.priority-stage em{padding:4px 7px;border-radius:999px;background:#edf2f7;color:#5e7188;font-size:10px;font-style:normal;font-weight:900}.p1 .priority-stage em{background:#eaf3ff;color:#1769e0}.p2 .priority-stage em{background:#e8f8f2;color:#087456}.p3 .priority-stage em{background:#fff1dc;color:#ad6500}.priority-question{min-height:36px;color:#64768d;font-size:12px;line-height:1.45;font-weight:650}.priority-skills{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.priority-skills span{padding:5px 7px;border-radius:7px;background:#f2f6fa;color:#3f5873;font-size:10px;font-weight:900}.p1 .priority-skills span{background:#edf5ff;color:#1769e0}.p2 .priority-skills span{background:#eaf8f3;color:#087456}.p3 .priority-skills span{background:#fff3e2;color:#a45f00}.priority-result{margin-top:9px;padding-top:8px;border-top:1px dashed #dfe6ee;color:#334f6b;font-size:11px;line-height:1.4;font-weight:850}
+.system-caption{display:flex;align-items:center;gap:10px;margin-bottom:10px;color:#526980;font-size:12px;font-weight:800}.system-caption:before,.system-caption:after{content:"";height:1px;flex:1;background:#dce6f0}.system-caption b{color:#0d3f75;font-size:14px;white-space:nowrap}
+.persona-system{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.persona-module{position:relative;isolation:isolate;min-height:350px;padding:18px 14px 15px;border:1px solid #dfe8f3;border-radius:17px;background:#fff;overflow:hidden}
+.persona-module:after{content:"";position:absolute;z-index:0;right:-26px;bottom:-38px;width:92px;height:92px;border-radius:50%;background:#edf5ff;opacity:.72;pointer-events:none}
+.persona-module:nth-child(2n):after{background:#eaf9f4}.persona-module:nth-child(3n):after{background:#fff2e5}
+.persona-module>*{position:relative;z-index:2}.persona-module h3{margin:12px 0 8px;font-size:17px}.persona-module p{margin:0;color:#607188;font-size:12px;line-height:1.55;font-weight:650}
+.persona-module b{display:block;margin-top:9px;color:#1a5d9e;font-size:11px;line-height:1.45}.persona-example{margin-top:10px!important;padding:8px 9px;border-left:3px solid #6fa8e8;border-radius:0 8px 8px 0;background:#f1f7ff;color:#3f5f80!important;font-size:10px!important;line-height:1.55!important;font-weight:700!important}.persona-example strong{color:#1769e0}.module-stage{display:inline-block;margin-top:10px;padding:4px 7px;border-radius:999px;background:#edf2f7;color:#5d7086;font-size:9px;font-weight:950}.module-stage.s1{background:#eaf3ff;color:#1769e0}.module-stage.s2{background:#e8f8f2;color:#087456}.module-stage.s3{background:#fff1dc;color:#ad6500}
+.brand-strip{display:grid;grid-template-columns:auto repeat(4,1fr);gap:8px;align-items:stretch;margin-top:16px;padding:12px;border-radius:15px;background:#edf5ff;border:1px solid #d4e5f7}
+.brand-label{display:grid;place-items:center;padding:0 15px;border-radius:10px;background:#0b3d78;color:#fff;font-size:13px;font-weight:950;text-align:center}
+.brand-step{padding:10px 12px;border-radius:10px;background:#fff;color:#456079;font-size:12px;line-height:1.45;font-weight:750}.brand-step b{display:block;color:#0d6d59;margin-bottom:3px}
+.content{padding:36px 50px 46px;background:linear-gradient(180deg,#fff 0,#f8fbff 100%)}
+.part-banner{display:flex;align-items:center;gap:16px;margin:0 0 14px;padding:12px 18px;border-radius:14px;color:#fff;background:linear-gradient(100deg,#092f63,#1769e0)}.part-banner.how{margin-top:4px;background:linear-gradient(100deg,#075b49,#0a9b75)}.part-banner b{font-size:21px}.part-banner span{font-size:13px;color:rgba(255,255,255,.82);font-weight:700}
+.section{margin-bottom:28px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 12px 34px rgba(25,59,97,.07);overflow:hidden;scroll-margin-top:78px}
+.section-pad{padding:28px 30px}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:22px}
+.section-kicker{margin-bottom:6px;color:var(--blue);font-size:13px;font-weight:950;letter-spacing:.13em;text-transform:uppercase}
+h2{margin:0;font-size:32px;line-height:1.2;letter-spacing:-.025em}
+.section-desc{max-width:720px;margin:0;color:var(--text);font-size:16px;line-height:1.55;text-align:right;font-weight:600}
+.stage-wrap{padding:30px;background:linear-gradient(180deg,#f8fbff,#fff)}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.stage{position:relative;min-height:420px;padding:23px 21px 20px;border:1px solid #dce7f4;border-radius:20px;background:#fff;box-shadow:0 9px 22px rgba(15,56,103,.06)}
+.stage:not(:last-child):after{content:"";position:absolute;z-index:2;right:-19px;top:46px;width:25px;height:25px;border-top:5px solid #8aadda;border-right:5px solid #8aadda;transform:rotate(45deg);background:#fff}
+.stage.s0{border-top:7px solid #8a9bb0}
+.stage.s1{border-top:7px solid #2b83eb}
+.stage.s2{border-top:7px solid #18a985}
+.stage.s3{border-top:7px solid #f5a623;background:linear-gradient(180deg,#fffaf0,#fff 42%)}
+.stage-top{display:flex;align-items:center;justify-content:space-between}
+.stage-no{font-size:13px;font-weight:950;letter-spacing:.08em;color:#72839a}
+.stage-tag{padding:6px 10px;border-radius:999px;background:#edf3f9;font-size:12px;font-weight:900;color:#5d7089}
+.stage h3{margin:18px 0 7px;font-size:26px}
+.stage-lead{margin:0 0 17px;color:#576980;font-size:15px;line-height:1.45;min-height:45px}
+.stage-goal{padding:10px 12px;border-radius:10px;background:#eef5ff;color:#155cae;font-size:14px;font-weight:900;margin-bottom:15px}
+.s2 .stage-goal{background:#e9f8f3;color:#087456}
+.s3 .stage-goal{background:#fff1d6;color:#9b5c00}
+.stage ul{margin:0;padding:0;list-style:none}
+.stage li{position:relative;padding:7px 0 7px 20px;border-bottom:1px dashed #e7edf4;color:#42526a;font-size:14px;line-height:1.4;font-weight:650}
+.stage li:before{content:"";position:absolute;left:2px;top:14px;width:7px;height:7px;border-radius:50%;background:#70a3e7}
+.s2 li:before{background:#36b894}.s3 li:before{background:#f2a526}
+.mindset{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:15px}
+.mind{padding:13px;border-radius:12px;text-align:center;background:#102d56;color:#fff;font-size:14px;font-weight:900}
+.mind:nth-child(2){background:#1556a6}.mind:nth-child(3){background:#0d8368}.mind:nth-child(4){background:#bd7111}
+.two-col{display:grid;grid-template-columns:1.18fr .82fr;gap:20px}
+.pillars{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.pillar{min-height:215px;padding:18px 15px;border:1px solid #dfe8f3;border-radius:17px;background:#fff}
+.pillar-no{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#e9f2ff;color:var(--blue);font-weight:950}
+.pillar h3{margin:16px 0 7px;font-size:18px}
+.pillar p{margin:0;color:#607188;font-size:13px;line-height:1.55;font-weight:600}
+.pillar:nth-child(2) .pillar-no{background:#fff0e6;color:#d66515}
+.pillar:nth-child(3) .pillar-no{background:#e8f8f2;color:#07805a}
+.pillar:nth-child(4) .pillar-no{background:#f2edff;color:#7048c8}
+.pillar:nth-child(5) .pillar-no{background:#fff6d8;color:#9e6b00}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.category{position:relative;min-height:215px;padding:18px;border-radius:18px;color:#fff;overflow:hidden}
+.category:after{content:"";position:absolute;right:-35px;bottom:-55px;width:140px;height:140px;border:1px solid rgba(255,255,255,.3);border-radius:50%;box-shadow:0 0 0 25px rgba(255,255,255,.05)}
+.category.origin{background:linear-gradient(145deg,#075f49,#159a6f)}
+.category.quality{background:linear-gradient(145deg,#0b4f77,#178db0)}
+.category.scene{background:linear-gradient(145deg,#965315,#e08a29)}
+.category small{font-size:11px;letter-spacing:.13em;color:rgba(255,255,255,.72);font-weight:900}
+.category h3{margin:9px 0 10px;font-size:22px}
+.category b{display:block;margin-bottom:8px;color:#fff7d7;font-size:13px}
+.category p{margin:0;font-size:13px;line-height:1.55;color:rgba(255,255,255,.88)}
+.common-logic{margin-top:12px;padding:13px 16px;border-radius:12px;background:#edf5ff;color:#1a4c85;font-size:14px;line-height:1.5;font-weight:850;text-align:center}
+.arch-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px}
+.matrix{display:grid;grid-template-columns:1fr 48px 1fr 48px 1fr;align-items:stretch}
+.matrix-card{padding:20px 16px;border-radius:18px;border:1px solid #dce6f1;background:#fff;text-align:center}
+.matrix-card .micon{display:grid;place-items:center;width:48px;height:48px;margin:0 auto 12px;border-radius:15px;background:#e9f2ff;color:var(--blue);font-size:18px;font-weight:950}
+.matrix-card h3{margin:0 0 7px;font-size:18px}.matrix-card p{margin:0;color:#66778e;font-size:13px;line-height:1.5}
+.matrix-card:nth-child(3) .micon{background:#e6f8f1;color:#05805b}
+.matrix-card:nth-child(5) .micon{background:#fff1de;color:#d56c14}
+.matrix-arrow{display:grid;place-items:center;color:#80a3cd;font-size:26px;font-weight:900}
+.flywheel{display:flex;align-items:center;justify-content:center;gap:4px;min-height:168px;padding:12px;border-radius:18px;background:linear-gradient(135deg,#071f46,#124d96);color:#fff}
+.fly-step{flex:1;text-align:center;padding:12px 7px}
+.fly-step b{display:block;margin-bottom:5px;font-size:14px}.fly-step span{font-size:11px;color:#bcd2ed}
+.fly-arrow{color:#54d9c0;font-size:19px;font-weight:900}
+.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}
+.role{padding:15px 17px;border:1px solid #dde7f2;border-radius:14px;background:#f9fbfe}
+.role h4{margin:0 0 8px;font-size:15px;color:#175ea9}.role ul{margin:0;padding-left:18px;color:#5d6d83;font-size:12px;line-height:1.75;font-weight:650}
+.case{padding:0;background:linear-gradient(135deg,#071d41 0,#0b356d 66%,#0d6b69 100%);color:#fff}
+.case-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:24px;padding:24px 30px 18px;align-items:center}
+.case-title .section-kicker{color:#60e2c7}.case-title h2{font-size:32px}.case-title p{margin:9px 0 0;color:#bfd1e8;font-size:14px;line-height:1.55}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-items:stretch}
+.metric{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:90px;padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);text-align:left}
+.metric b{display:block;font-size:25px;color:#fff4b9;line-height:1.05}.metric span{display:block;margin-top:6px;color:#c7d9ee;font-size:11px;line-height:1.35;font-weight:650}
+.case-body{display:grid;grid-template-columns:1.08fr .92fr;gap:14px;padding:0 30px 26px;align-items:start}
+.case-breakout,.case-matrix{display:flex;flex-direction:column;gap:10px;min-width:0}
+.case-flow{padding:16px;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.08)}
+.case-flow-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}.case-flow-title h3{margin:0;font-size:20px}.case-flow-title span{color:#9fb9d8;font-size:11px;font-weight:750}
+.flow-line{display:grid;grid-template-columns:1fr 22px 1fr 22px 1.18fr 22px 1fr;gap:4px;align-items:stretch}.flow-node{display:flex;flex-direction:column;justify-content:center;min-height:76px;padding:10px 9px;border:1px solid rgba(255,255,255,.14);border-radius:11px;background:rgba(255,255,255,.07)}.flow-node b{font-size:13px}.flow-node small{margin-top:4px;color:#bcd1e8;font-size:10px;line-height:1.4;font-weight:650}.flow-node.hot{position:relative;border:2px solid #ffcb57;background:linear-gradient(145deg,rgba(255,196,61,.24),rgba(244,123,32,.18));box-shadow:0 0 0 3px rgba(255,203,87,.08)}.flow-node.hot:before{content:"核心放量动作";position:absolute;right:7px;top:-9px;padding:3px 6px;border-radius:999px;background:#ffcb57;color:#714500;font-size:8px;font-weight:950}.flow-node.hot b{color:#ffe27d}.flow-arrow{display:grid;place-items:center;color:#55dec2;font-size:19px;font-weight:950}.flow-summary{margin:11px 0 0;padding-top:10px;border-top:1px dashed rgba(255,255,255,.17);color:#d9e8f9;font-size:12px;line-height:1.55;font-weight:750}.flow-summary strong{color:#ffe27d}
+.breakout-visual{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;align-items:start}.viral-shot{position:relative;width:110px;margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.15);border-radius:14px;background:#10284c}.viral-shot img{display:block;width:100%;height:auto;object-fit:contain}.viral-shot figcaption{padding:6px 5px;background:rgba(5,24,54,.96);color:#fff;text-align:center;font-size:9px;line-height:1.3;font-weight:850}
+.shot{position:relative;margin:0;overflow:hidden;border-radius:15px;background:#10284c;border:1px solid rgba(255,255,255,.14)}
+.shot img{display:block;width:100%;height:auto;object-fit:contain}
+.shot-label{position:absolute;left:10px;bottom:10px;padding:7px 10px;border-radius:8px;background:rgba(4,20,47,.82);backdrop-filter:blur(5px);font-size:11px;font-weight:850;color:#fff}
+.live-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-items:start;width:100%}
+.live-shot{position:relative;margin:0;overflow:hidden;border-radius:12px;background:#10284c;border:1px solid rgba(255,255,255,.15);box-shadow:0 7px 18px rgba(0,0,0,.14)}
+.live-shot img{display:block;width:100%;height:auto;object-fit:contain}
+.live-shot figcaption{padding:7px 5px;background:rgba(5,24,54,.96);color:#e7f1ff;text-align:center;font-size:10px;line-height:1.25;font-weight:800}
+.chart-card{display:flex;flex-direction:column;align-self:stretch;min-height:0;padding:11px 13px;border-radius:14px;background:rgba(255,255,255,.98);color:var(--ink);overflow:hidden}
+.chart-card h3{margin:0;font-size:16px}.chart-note{margin:3px 0 4px;color:#6c7d92;font-size:9px}
+#dailyChart{width:100%;min-height:0;flex:1 1 0;display:block}
+.chart-insight{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:3px}
+.insight{padding:6px 8px;border-radius:8px;background:#eef5ff;color:#315d8f;font-size:9px;line-height:1.3;font-weight:800}
+.cta{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:28px 34px;border-radius:22px;background:linear-gradient(110deg,#eaf3ff,#ecfbf6);border:1px solid #d0e4f4}
+.cta h2{font-size:28px}.cta p{margin:8px 0 0;color:#51647c;font-size:14px;font-weight:650}
+.cta-badges{display:flex;gap:8px;margin-top:13px}.cta-badges span{padding:6px 10px;border-radius:999px;background:#fff;border:1px solid #d9e5f1;color:#4b617c;font-size:11px;font-weight:850}
+.guide-access{display:grid;grid-template-columns:132px 220px;gap:15px;align-items:center}.guide-qr{display:block;width:132px;height:132px;padding:7px;border:1px solid #cddceb;border-radius:15px;background:#fff;box-shadow:0 8px 20px rgba(16,57,98,.10)}.guide-access-copy{display:flex;flex-direction:column;align-items:flex-start;gap:7px}.guide-access-copy b{color:#0d3f75;font-size:15px;line-height:1.35}.guide-access-copy span{color:#62758b;font-size:12px;line-height:1.5;font-weight:700}.guide-access-copy a{display:inline-block;padding:8px 12px;border-radius:9px;background:#1769e0;color:#fff;text-decoration:none;font-size:12px;font-weight:900;box-shadow:0 6px 15px rgba(23,105,224,.18)}
+.footer{display:flex;justify-content:space-between;align-items:center;padding:20px 52px;background:#071b3c;color:#8fa8c5;font-size:11px}
+.footer strong{color:#d5e6fa}
+@media(max-width:1000px){
+  body{padding:0}.page{width:100%}.hero,.content{padding-left:22px;padding-right:22px}.doc-nav{position:sticky;top:0;grid-template-columns:1fr;padding:10px 18px;max-height:176px;overflow-y:auto}.nav-links{overflow-x:auto;padding-bottom:3px}.nav-group-label{justify-self:start}.hero-grid,.two-col,.arch-grid,.case-head,.case-body{grid-template-columns:1fr}.hero-right,.metrics{grid-template-columns:repeat(2,1fr)}h1{font-size:43px}.wake-up{padding:20px;grid-template-columns:1fr}.wake-arrow{transform:rotate(90deg);margin:12px auto}.why-head{display:block}.why-flow,.persona-why,.ecosystem-cases{grid-template-columns:1fr}.why-next{transform:rotate(90deg);min-height:44px}.tea-pair{grid-template-columns:repeat(2,minmax(0,1fr))}.sea-layout{grid-template-columns:1fr}.sea-layout img{height:auto}.tea-pair img{height:auto}.ai-trust{grid-template-columns:1fr}.ai-badge{justify-self:start}.ai-points{justify-content:flex-start}.stages,.mindset{grid-template-columns:1fr 1fr}.stage:not(:last-child):after{display:none}.stage-priority-head .section-desc{white-space:normal;font-size:14px}.balanced-title{display:block;white-space:normal}.balanced-title span{display:block}.balanced-title i{display:none}.roadmap-next,.priority-intro{align-items:flex-start;flex-wrap:wrap}.priority-map{grid-template-columns:repeat(2,1fr)}.persona-system{grid-template-columns:repeat(2,1fr)}.brand-strip{grid-template-columns:1fr 1fr}.brand-label{grid-column:1/-1;padding:10px}.pillars{grid-template-columns:1fr 1fr}.category-grid{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.matrix-arrow{transform:rotate(90deg)}.case-breakout,.case-matrix{gap:10px}.flow-line{grid-template-columns:1fr}.flow-arrow{transform:rotate(90deg);min-height:22px}.breakout-visual{grid-template-columns:1fr}.viral-shot{width:110px;max-width:110px;margin:auto}.shot{min-height:0}.live-grid{grid-template-columns:repeat(2,1fr)}.chart-card{height:270px!important}#dailyChart{min-height:0}.cta{grid-template-columns:1fr}.guide-access{grid-template-columns:112px 1fr}.guide-qr{width:112px;height:112px}}
+@media print{body{padding:0;background:#fff}.page{box-shadow:none}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="brandline">
+      <div class="logo"><span class="logo-mark"></span>腾讯营销 · 生鲜行业</div>
+      <div class="eyebrow">腾讯营销 · 生鲜行业经营指南</div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>生鲜内容营销<span>必做四步法</span></h1>
+        <p class="hero-copy">生鲜在线下随处可买，消费者为什么要隔着屏幕专门买你的？内容要先讲清<strong>你的货有什么不同、为什么值得选</strong>；人设再讲清<strong>是谁在选货、凭什么懂货、出了问题谁负责</strong>。</p>
+      </div>
+      <div class="hero-right">
+        <div class="north-card"><span class="num">01 / 记忆</span><h3>认得出</h3><p>刷到内容时，立刻知道你是谁、卖什么</p></div>
+        <div class="north-card"><span class="num">02 / 信任</span><h3>信得过</h3><p>相信你真的懂品、懂货，并愿意长期背书</p></div>
+        <div class="north-card"><span class="num">03 / 首选</span><h3>闭眼买</h3><p>产生需求时第一时间想起你，持续复购</p></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="doc-nav" aria-label="文档内容索引">
+    <div class="nav-group-label">为什么要做</div>
+    <div class="nav-links"><a href="#why-content">内容经营价值</a><a href="#why-persona">人设与活人感</a></div>
+    <div class="nav-group-label how">怎么做</div>
+    <div class="nav-links how"><a href="#how-roadmap">成长四阶段</a><a href="#how-system">人设七模块</a><a href="#how-business">生意闭环</a><a href="#case-brand">某人设商家案例</a></div>
+  </nav>
+
+  <div class="wake-up">
+    <div class="wake-group"><span class="wake-label">内容价值</span><div class="wake-text">把看不见的源头、标准和差异讲清楚，给消费者一个线上购买的理由</div></div>
+    <div class="wake-arrow">→</div>
+    <div class="wake-group"><span class="wake-label good">人设价值</span><div class="wake-text">让一个真实、专业、愿意负责的人，持续为这些理由提供可信背书</div></div>
+  </div>
+
+  <div class="content">
+    <div class="part-banner"><b>PART 01｜为什么要做</b><span>先回答生鲜为什么需要内容经营，以及内容经营为什么需要人设与活人感</span></div>
+    <section class="why-section" id="why-content" data-nav-section>
+      <div class="why-head">
+        <div class="why-title"><div class="section-kicker">01 / WHY CONTENT MATTERS</div><h2>生鲜商家为什么必须做内容经营？</h2><p>消费者并不缺少购买农产品的渠道。线下商超看得见、摸得到、马上能拿走；要让用户转而在视频号或朋友圈向你购买，必须先通过内容降低隔屏决策的不确定性。</p></div>
+      </div>
+      <div class="why-flow">
+        <article class="why-card"><small>线下商超的天然优势</small><h3>熟悉、直观、即时</h3><p>价格、卖相和新鲜度可以现场判断，商品到手快，购买路径已经形成习惯。</p></article>
+        <div class="why-next">→</div>
+        <article class="why-card risk"><small>线上生鲜的天然阻力</small><h3>看不见、摸不到、怕货不对板</h3><p>产地、品质、损耗、物流与售后都存在不确定性，单靠低价和广告很难建立长期选择。</p></article>
+        <div class="why-next">→</div>
+        <article class="why-card answer"><small>内容经营创造的价值</small><h3>把差异讲清，把信任做厚</h3><p>持续展示源头、选品、加工、检测、冷链与使用场景，让用户理解为什么这批货值得专门找你买。</p></article>
+      </div>
+      <div class="why-quote">内容经营解决的不是“有没有曝光”，而是“消费者为什么不在商超买、要专门向你买”。</div>
+
+      <div class="ecosystem-bridge">
+        <div class="ecosystem-head"><h3>在微信生态里，自然内容也是广告经营的上游资产</h3><p>自然内容先制造兴趣、信任与热点语境，广告再在兴趣形成后扩大触达、承接成交。现有案例体现的是关联与承接关系，而非单一因素的因果归因。</p></div>
+        <div class="ecosystem-cases">
+          <article class="eco-case">
+            <div class="eco-case-head"><h4>茶叶：自然内容形成兴趣场，广告同品类承接</h4><span>内容 × 广告共现</span></div>
+            <div class="tea-pair">
+              <figure><img src="生鲜人设内容经营_assets/茶叶自然内容.jpg" alt="视频号龙井茶自然内容截图"><figcaption>自然内容讲大佛龙井</figcaption></figure>
+              <figure><img src="生鲜人设内容经营_assets/茶叶评论区广告.jpg" alt="茶叶自然内容评论区同品类广告截图"><figcaption>评论区承接茶叶广告</figcaption></figure>
+            </div>
+            <p>茶叶自然内容先积累互动与品类兴趣，同一内容场景中出现茶叶广告推荐。对强信任品类而言，持续经营主页内容，也是在持续建设广告可承接的兴趣语境。</p>
+          </article>
+          <article class="eco-case">
+            <div class="eco-case-head"><h4>海参：国足热点升温，品类商业消耗出现同频窗口</h4><span>热点 × 商业共振</span></div>
+            <div class="sea-layout">
+              <figure><img src="生鲜人设内容经营_assets/海参热点内容_脱敏.jpg" alt="国足与海参热点自然内容截图（账号信息已脱敏）"><figcaption>国足/海参热点内容</figcaption></figure>
+              <div class="sea-mini"><h5>国足微信热度 × 海参广告消耗趋势</h5><svg id="seaTrend" role="img" aria-label="国足微信热度与海参广告消耗趋势图"></svg></div>
+            </div>
+            <p>国足/世界杯话题升温期间，海参广告消耗在两个关键窗口同步处于阶段高位。热点不只带来讨论，也可能成为品类关注与商业放量的重要信号。</p>
+          </article>
+        </div>
+        <div class="eco-conclusion">日常内容积累信任，热点内容扩大兴趣，广告与直播承接成交——内容经营不是广告后的补充，而是广告前的蓄水。</div>
+      </div>
+
+      <div class="persona-subhead" id="why-persona" data-nav-section><div class="section-kicker">02 / WHY PERSONA MATTERS</div><h3>做内容经营，为什么“有人设、有活人感”尤其重要？</h3><p>商品内容能证明货好，人设内容则回答“是谁在说、凭什么信”。生鲜越非标、决策越依赖信任，就越需要一个稳定、真实、专业的角色持续解释并承担责任。</p></div>
+      <div class="persona-why">
+        <article class="persona-path"><span class="path-no">非</span><h3>非品牌：用“人的信用”补足品牌信用</h3><p>当用户不认识品牌时，会先判断这个人是否真实、是否懂行、是否敢拿自己的信誉为商品负责。人设是非品牌建立首轮信任最快的入口。</p></article>
+        <article class="persona-path brand"><span class="path-no">品</span><h3>品牌：用“活人感”让品牌承诺被感知</h3><p>Logo只能证明品牌存在；创始人、厂长、员工和主播持续出镜，才能把研发、品控和售后承诺讲得具体、可记忆、可互动。</p></article>
+      </div>
+      <div class="ai-trust"><div class="ai-badge">AI CONTENT<br>ERA</div><div><h3>AI 内容越丰富，真实的人反而越稀缺</h3><p>AI 可以提升选题、脚本和素材生产效率，但当内容趋同、真假更难判断时，一个鲜活、持续回应、敢于负责的人，能为品牌提供机器难以替代的温度与可信度，提升消费者的好感、记忆和信誉判断。</p></div><div class="ai-points"><span>AI 提效率</span><span>真人建好感</span><span>人设担信誉</span></div></div>
+      <div class="persona-formula">活人感 = <span>稳定角色</span> × 真实过程 × 可识别表达 × 持续互动 × 责任承诺</div>
+      <div class="why-quote">内容让用户理解“为什么值得买”，人设让用户相信“这些理由是真的，而且有人长期负责”。</div>
+    </section>
+
+    <div class="part-banner how"><b>PART 02｜怎么做</b><span>先判断成长阶段 → 再补本阶段关键能力 → 最后接入匹配的生意闭环</span></div>
+    <section class="section" id="how-roadmap" data-nav-section>
+      <div class="stage-wrap">
+        <div class="section-head">
+          <div><div class="section-kicker">03 / HOW TO BUILD · PERSONA ROADMAP</div><h2>从真人信用，到可复制的品牌 IP</h2></div>
+          <p class="section-desc">人设不是让老板永远亲自卖货，而是先用真人建立信任，再把表达、证据和角色逐步标准化，最终沉淀为组织资产。</p>
+        </div>
+        <div class="stages">
+          <article class="stage s0">
+            <div class="stage-top"><span class="stage-no">STAGE 0</span><span class="stage-tag">身份打底</span></div>
+            <h3>真人立住</h3><p class="stage-lead">有人出镜，但用户还不清楚他与商品有什么关系。</p>
+            <div class="stage-goal">目标：让用户知道“谁在负责”</div>
+            <ul><li>确定一个主角色和一句人设定位</li><li>头像简介讲清身份＋产地/品类</li><li>置顶自我介绍、故事、代表商品</li><li>首批至少5条真人出镜内容</li><li>先跑稳重点商品和单直播间</li></ul>
+          </article>
+          <article class="stage s1">
+            <div class="stage-top"><span class="stage-no">STAGE 1</span><span class="stage-tag">个人 IP 放大</span></div>
+            <h3>稳定可记</h3><p class="stage-lead">已经能成交，但刷到内容时还不一定认得出。</p>
+            <div class="stage-goal">目标：形成稳定活人感与记忆点</div>
+            <ul><li>固定人物、口头禅、背景和封面</li><li>每周稳定更新3—5条</li><li>建立故事、专业、源头、场景栏目</li><li>持续回复评论与真实用户问题</li><li>引入助播/员工，降低本人依赖</li></ul>
+          </article>
+          <article class="stage s2">
+            <div class="stage-top"><span class="stage-no">STAGE 2</span><span class="stage-tag">个人 IP 品牌化</span></div>
+            <h3>信任可复制</h3><p class="stage-lead">用户相信这个人，但经营仍依赖本人和单账号。</p>
+            <div class="stage-goal">目标：从“信这个人”到“信这套标准”</div>
+            <ul><li>人物与Logo、包装、店铺深度绑定</li><li>本人重点讲研发、溯源、品控和大场</li><li>日常平播逐步交给专业主播</li><li>建立固定栏目与月度内容主题</li><li>主账号做信任，垂类号测试场景</li></ul>
+          </article>
+          <article class="stage s3">
+            <div class="stage-top"><span class="stage-no">STAGE 3</span><span class="stage-tag">品牌 IP 矩阵化</span></div>
+            <h3>多角色扩张</h3><p class="stage-lead">单账号、单角色和单直播间接近增长上限。</p>
+            <div class="stage-goal">目标：把个人信用变成组织资产</div>
+            <ul><li>创始人、员工、家属、主播角色分工</li><li>主账号＋垂类账号＋单品直播间</li><li>一品一直播间，独立货盘与人群</li><li>本人只承担关键品牌节点和大场</li><li>广告、店铺、私域协同沉淀复购</li></ul>
+          </article>
+        </div>
+        <div class="mindset">
+          <div class="mind">“我知道你是谁”</div><div class="mind">“刷到就知道是你”</div><div class="mind">“我相信你们的标准”</div><div class="mind">“要买这个，我先想到你们”</div>
+        </div>
+        <div class="brand-strip"><div class="brand-label">某人设商家<br>成长轨迹</div><div class="brand-step"><b>品牌主理人立信任</b>讲初心、研发与食品安全</div><div class="brand-step"><b>主页持续经营</b>人物故事、溯源与家庭场景</div><div class="brand-step"><b>热点内容破圈</b>高考节点多条内容点赞10万+</div><div class="brand-step"><b>品牌 IP 矩阵化</b>专业主播平播＋9个大单品直播间</div></div>
+        <div class="roadmap-next"><span>第一步完成：判断当前成熟阶段</span><b>→</b><a href="#how-system">第二步：只补本阶段最关键的能力</a></div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="how-system" data-nav-section>
+      <div class="section-head stage-priority-head"><div><div class="section-kicker">04 / HOW TO BUILD · PERSONA SYSTEM</div><h2 class="balanced-title"><span>人设不是标签</span><i>｜</i><span>是一套信任系统</span></h2></div><p class="section-desc">七模块是一张完整能力地图；先对照上方四阶段找到当前位置，再优先补齐本阶段主攻项，其余能力随成长逐步建设。</p></div>
+      <div class="priority-intro"><b>四阶段与七模块一一呼应：按当前阶段找到对应的主攻能力</b><span>成长阶段 → 模块优先级 → 生意闭环</span></div>
+      <div class="priority-map">
+        <article class="priority-row"><div class="priority-stage"><b>S0 真人立住</b><em>先解决“你是谁”</em></div><div class="priority-question">用户还不知道谁在卖、为什么由这个人来卖。</div><div class="priority-skills"><span>① 身份锚点</span><span>② 信任主张</span><span>③ 基础证据链</span></div><div class="priority-result">本阶段结果：立住一个真实、专业、愿负责的人。</div></article>
+        <article class="priority-row p1"><div class="priority-stage"><b>S1 稳定可记</b><em>再解决“记不住”</em></div><div class="priority-question">用户看过内容，但刷到时认不出，内容也不稳定。</div><div class="priority-skills"><span>④ 记忆系统</span><span>⑤ 内容栏目</span><span>③ 持续补证据</span></div><div class="priority-result">本阶段结果：形成稳定活人感和可重复的内容记忆。</div></article>
+        <article class="priority-row p2"><div class="priority-stage"><b>S2 信任可复制</b><em>解决“只信本人”</em></div><div class="priority-question">用户相信老板本人，但换主播、换账号后信任下降。</div><div class="priority-skills"><span>③ 证据标准化</span><span>⑥ 角色矩阵</span><span>⑦ 基础承接</span></div><div class="priority-result">本阶段结果：从“信这个人”升级为“信这套标准”。</div></article>
+        <article class="priority-row p3"><div class="priority-stage"><b>S3 多角色扩张</b><em>解决“增长上限”</em></div><div class="priority-question">单角色、单账号、单直播间已经接近增长天花板。</div><div class="priority-skills"><span>⑥ 角色规模化</span><span>⑦ 完整闭环</span><span>①—⑤ 持续维护</span></div><div class="priority-result">本阶段结果：把个人信用沉淀为可扩张的组织资产。</div></article>
+      </div>
+      <div class="system-caption"><b>七模块完整能力地图｜卡片标签标明各阶段主攻顺序</b></div>
+      <div class="persona-system">
+        <article class="persona-module"><span class="pillar-no">1</span><span class="module-stage">S0 主攻</span><h3>身份锚点</h3><p>身份＋与品类的关系＋长期在做的事。</p><b>产出：一句定位、3个标签、30秒自我介绍</b><p class="persona-example"><strong>参考：</strong>“我是返乡做助农的生鲜创始人，过去8年一直在产地帮大家挑当季好果。”也可选择农二代、厂长、打假人等真实身份。</p></article>
+        <article class="persona-module"><span class="pillar-no">2</span><span class="module-stage">S0 主攻</span><h3>信任主张</h3><p>为什么是你来卖？为什么货值得买？如何负责？</p><b>产出：专业理由＋商品承诺＋售后态度</b><p class="persona-example"><strong>参考：</strong>“这批海鲜我只选当天上岸、达到规格的货；收到不鲜或坏果，我负责到底。”</p></article>
+        <article class="persona-module"><span class="pillar-no">3</span><span class="module-stage">S0 基础 · S2 标准化</span><h3>证据链</h3><p>源头、研发、加工、检测、冷链与口碑持续可见。</p><b>产出：让每个商品承诺都有内容证据</b><p class="persona-example"><strong>参考：</strong>口播说“源头直发”，下一条就展示产地采摘、分选称重、检测报告、装箱和冷链发货全过程。</p></article>
+        <article class="persona-module"><span class="pillar-no">4</span><span class="module-stage s1">S1 主攻</span><h3>记忆系统</h3><p>固定人物、口播、场景、封面、栏目和视觉符号。</p><b>目标：记住人，也记住品牌与商品</b><p class="persona-example"><strong>参考：</strong>每条视频都由同一位主理人在产地开场：“今天替你去源头验货”，并固定围裙、场景和封面样式。</p></article>
+        <article class="persona-module"><span class="pillar-no">5</span><span class="module-stage s1">S1 主攻</span><h3>内容栏目</h3><p>人物故事、专业判断、源头过程、家庭场景与热点。</p><b>产出：形成用户愿意持续追看的固定栏目</b><p class="persona-example"><strong>参考：</strong>固定更新《今天吃什么》《产地验货日记》《老板教你挑好货》，热点来时再用专业身份及时解读。</p></article>
+        <article class="persona-module"><span class="pillar-no">6</span><span class="module-stage s2">S2 建立 · S3 扩张</span><h3>角色矩阵</h3><p>创始人、员工、家属、农户、专家与专业主播分工。</p><b>不是复制同款人设，而是共同证明承诺</b><p class="persona-example"><strong>参考：</strong>创始人讲标准，农户讲种养过程，品控员讲检测，主播讲吃法和权益；不同角色共同证明同一件事。</p></article>
+        <article class="persona-module"><span class="pillar-no">7</span><span class="module-stage s3">S2 接入 · S3 完整化</span><h3>经营承接</h3><p>主页积累信任，广告放大，直播成交，私域复购。</p><b>人设最终必须进入生意闭环</b><p class="persona-example"><strong>参考：</strong>短视频先讲产地与挑选方法，广告放大高互动内容，直播间承接同款商品，再用社群提醒复购。</p></article>
+      </div>
+      <div class="common-logic">不是七项一起做：S0先立人，S1让人可记，S2让信任可复制，S3再把信任规模化变成生意。</div>
+    </section>
+
+    <section class="section section-pad" id="how-business" data-nav-section>
+      <div class="section-head">
+        <div><div class="section-kicker">05 / HOW TO GROW · PERSONA TO BUSINESS</div><h2>能力补齐后，再接入与当前阶段匹配的生意闭环</h2></div>
+        <p class="section-desc">闭环不是另一套并列任务，而是把已经建立的人设信任转化为兴趣、广告新增、直播成交和长期复购。</p>
+      </div>
+      <div class="arch-grid">
+        <div>
+          <div class="matrix">
+            <article class="matrix-card"><span class="micon">主</span><h3>主理人做信任</h3><p>初心、专业判断<br>研发、供应链、品牌承诺</p></article><div class="matrix-arrow">→</div>
+            <article class="matrix-card"><span class="micon">角</span><h3>多角色做证明</h3><p>员工、农户、家属、专家<br>展示过程与真实场景</p></article><div class="matrix-arrow">→</div>
+            <article class="matrix-card"><span class="micon">播</span><h3>专业主播做成交</h3><p>平播标准化承接<br>本人聚焦关键节点大场</p></article>
+          </div>
+        </div>
+        <div>
+          <div class="flywheel">
+            <div class="fly-step"><b>人设主页</b><span>积累信任</span></div><div class="fly-arrow">→</div>
+            <div class="fly-step"><b>自然内容</b><span>热点破圈</span></div><div class="fly-arrow">→</div>
+            <div class="fly-step"><b>广告放大</b><span>新增人群</span></div><div class="fly-arrow">→</div>
+            <div class="fly-step"><b>直播/直购</b><span>规模成交</span></div><div class="fly-arrow">→</div>
+            <div class="fly-step"><b>店铺私域</b><span>品牌复购</span></div>
+          </div>
+          <div class="role-grid">
+            <div class="role"><h4>时令品：做“产地见证人”</h4><ul><li>在产地讲上市窗口、成熟度与分级</li><li>展示采摘、包装、发货和品质波动</li><li>适合农户、合作社、产地货主人设</li></ul></div>
+            <div class="role"><h4>常青品：做“长期把关人”</h4><ul><li>持续讲研发、选品、加工与配料标准</li><li>展示检测、冷链、履约和长期承诺</li><li>适合创始人、博士、厂长、研发人设</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case" id="case-brand" data-nav-section>
+      <div class="case-head">
+        <div class="case-title"><div class="section-kicker">06 / BENCHMARK CASE · 某人设商家</div><h2>从“品牌主理人可信”，到“某人设商家值得信任”</h2></div>
+        <div class="metrics">
+          <div class="metric"><b>10万+</b><span>高考期间多条人设自然内容点赞</span></div>
+          <div class="metric"><b>3—6×</b><span>内容爆发后广告增长</span></div>
+          <div class="metric"><b>100w+</b><span>618期间广告单日消耗峰值</span></div>
+          <div class="metric"><b>500万+</b><span>单日GMV峰值</span></div>
+          <div class="metric"><b>&lt;2%</b><span>9个大单品直播间下单人群重合度</span></div>
+        </div>
+      </div>
+      <div class="case-body">
+        <div class="case-breakout">
+          <div class="case-flow">
+            <div class="case-flow-title"><h3>主页专题经营 × 热点破圈</h3><span>内容信任进入生意增长的关键路径</span></div>
+            <div class="flow-line">
+              <div class="flow-node"><b>① 主理人立信任</b><small>讲初心、研发与食品安全</small></div><div class="flow-arrow">→</div>
+              <div class="flow-node"><b>② 主页专题经营</b><small>人物故事、农场溯源、家庭场景</small></div><div class="flow-arrow">→</div>
+              <div class="flow-node hot"><b>③ 热点内容破圈</b><small>借社会事件放大情绪与品牌关注</small></div><div class="flow-arrow">→</div>
+              <div class="flow-node"><b>④ 广告承接放量</b><small>热点兴趣进入广告与直播成交</small></div>
+            </div>
+            <p class="flow-summary">爆款公式：<strong>社会事件＋情感共鸣＋易转发</strong>；热点破圈撬动广告峰值。</p>
+          </div>
+          <div class="breakout-visual">
+            <figure class="viral-shot"><img src="生鲜人设内容经营_assets/某人设商家视频号爆量截图.png" alt="某人设商家视频号热点爆量截图（身份已脱敏）"><figcaption>社会热点内容爆发｜点赞、转发10万+</figcaption></figure>
+            <div class="chart-card">
+              <h3>微信热度与某人设商家广告日耗趋势</h3>
+              <p class="chart-note">05/27—06/18｜热点热度与广告放量同频｜日耗已脱敏</p>
+              <svg id="dailyChart" role="img" aria-label="微信指数热度与某人设商家广告日耗双曲线趋势图"></svg>
+              <div class="chart-insight"><div class="insight">微信热度先行上升，热点内容放大兴趣与品牌关注。</div><div class="insight">广告日耗随后放量，峰值展示为100w+。</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-matrix">
+          <figure class="shot"><img src="生鲜人设内容经营_assets/某人设商家主页经营.png" alt="某人设商家多账号主页经营截图"><figcaption class="shot-label">多账号主页：按产品线拆分内容与人群</figcaption></figure>
+          <div class="live-grid">
+            <figure class="live-shot"><img src="生鲜人设内容经营_assets/矩阵直播间1.png" alt="某人设商家童子鸡直播间截图"><figcaption>童子鸡</figcaption></figure>
+            <figure class="live-shot"><img src="生鲜人设内容经营_assets/矩阵直播间2.jpg" alt="某人设商家散养大公鸡直播间截图"><figcaption>散养大公鸡</figcaption></figure>
+            <figure class="live-shot"><img src="生鲜人设内容经营_assets/矩阵直播间3.jpg" alt="某人设商家黑猪直播间截图"><figcaption>生态黑猪</figcaption></figure>
+            <figure class="live-shot"><img src="生鲜人设内容经营_assets/矩阵直播间4.jpg" alt="某人设商家烤乳鸽直播间截图"><figcaption>烤乳鸽</figcaption></figure>
+            <figure class="live-shot"><img src="生鲜人设内容经营_assets/矩阵直播间5.png" alt="某人设商家烤肠直播间截图"><figcaption>黑猪肉烤肠</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div><div class="section-kicker">LEARN MORE · 人设经营进阶指南</div><h2>想进一步落地？扫码查看《生鲜行业 × 人设型商家经营指南 2026》</h2><p>获取更完整的阶段标准、主页搭建、内容栏目、素材方向、投放配置与直播经营方法，帮助团队把人设能力真正落到日常经营中。</p><div class="cta-badges"><span>主页搭建</span><span>人设内容</span><span>广告素材</span><span>直播经营</span></div></div>
+      <div class="guide-access"><img class="guide-qr" src="生鲜人设内容经营_assets/生鲜行业人设型商家经营指南2026_二维码.png" alt="生鲜行业人设型商家经营指南2026二维码"><div class="guide-access-copy"><b>微信扫码<br>查看完整经营指南</b><span>也可点击下方按钮直接打开文档</span><a href="https://doc.weixin.qq.com/doc/w3_ASwAcwYbAEoCN0K5cht0SRniFe7zx?scode=AJEAIQdfAAoq2hmFtPASwAcwYbAEo" target="_blank" rel="noopener noreferrer">打开完整指南</a></div></div>
+    </section>
+  </div>
+
+  <footer class="footer"><strong>腾讯营销 · 生鲜内容营销必做四步法</strong><span>内容建立认知 · 人设建立信任 · 经营沉淀增长</span></footer>
+</main>
+<script>
+(function(){
+  const labels=["05/27","05/28","05/29","05/30","05/31","06/01","06/02","06/03","06/04","06/05","06/06","06/07","06/08","06/09","06/10","06/11","06/12","06/13","06/14","06/15","06/16","06/17","06/18"];
+  const spendTrend=[16,30,33,26,24,22,23,48,56,43,63,83,100,93,85,58,44,50,55,70,61,54,41];
+  const wechatTrend=[18,20,22,19,18,21,24,35,48,62,100,88,76,68,58,49,44,40,42,45,38,34,30];
+  const seaSpend=[28.9,25.7,34.9,28,34.6,29.9,34.2,31.6,31.8,33.9,39.7,32.1,34.2,32.9,40.3,38.3,34.5,29.6,28.1,25.6,18.2,25.8,38.9,46,35.1,29.1,33.2,31.4,28,34,30.9,29.8,40.9,45.1,45];
+  const seaHeat=[28,22,24,26,28,22,24,26,28,22,37,40,43,46,34,37,40,43,46,34,37,58,76,92,100,90,82,74,62,58,55,60,78,88,84];
+  function draw(){
+    const svg=document.getElementById("dailyChart");
+    const W=svg.clientWidth||680,H=svg.clientHeight||620,m={l:20,r:20,t:48,b:30},iw=W-m.l-m.r,ih=H-m.t-m.b,max=110;
+    svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+    const NS="http://www.w3.org/2000/svg",add=(tag,a,p=svg)=>{const e=document.createElementNS(NS,tag);Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));p.appendChild(e);return e};
+    const x=i=>m.l+i/(labels.length-1)*iw,y=v=>m.t+ih-v/max*ih;
+    const defs=add("defs",{}),grad=add("linearGradient",{id:"spendArea",x1:"0",y1:"0",x2:"0",y2:"1"},defs);add("stop",{offset:"0%","stop-color":"#1769e0","stop-opacity":".24"},grad);add("stop",{offset:"100%","stop-color":"#1769e0","stop-opacity":"0"},grad);
+    const shadeFrom=labels.indexOf("06/03"),shadeTo=labels.indexOf("06/08");
+    add("rect",{x:x(shadeFrom),y:m.t,width:x(shadeTo)-x(shadeFrom),height:ih,fill:"#ffcf57",opacity:".12",rx:"8"});
+    for(let i=0;i<=4;i++){const yy=m.t+ih*i/4;add("line",{x1:m.l,y1:yy,x2:W-m.r,y2:yy,stroke:"#dbe5f0","stroke-dasharray":"4 6"})}
+    add("line",{x1:m.l,y1:m.t+ih,x2:W-m.r,y2:m.t+ih,stroke:"#bfcddd","stroke-width":"1.2"});
+    const series=[
+      {name:"某人设商家广告日耗趋势（脱敏）",data:spendTrend,color:"#1769e0"},
+      {name:"微信指数热度",data:wechatTrend,color:"#f47b20"}
+    ];
+    let legendX=m.l;
+    series.forEach(s=>{add("line",{x1:legendX,y1:18,x2:legendX+22,y2:18,stroke:s.color,"stroke-width":"5","stroke-linecap":"round"});const t=add("text",{x:legendX+29,y:22,fill:"#42526a","font-size":"11","font-weight":"850"});t.textContent=s.name;legendX+=Math.min(238,s.name.length*11+66)});
+    series.forEach((s,idx)=>{const d=s.data.map((v,i)=>(i?"L":"M")+x(i)+","+y(v)).join(" ");if(idx===0)add("path",{d:d+` L${x(s.data.length-1)},${m.t+ih} L${x(0)},${m.t+ih} Z`,fill:"url(#spendArea)"});add("path",{d,fill:"none",stroke:s.color,"stroke-width":"4","stroke-linecap":"round","stroke-linejoin":"round"})});
+    [0,4,8,12,16,20,22].forEach(i=>{const t=add("text",{x:x(i),y:H-12,"text-anchor":"middle",fill:"#7b8ca1","font-size":"10","font-weight":"700"});t.textContent=labels[i]});
+    const spendPeak=spendTrend.indexOf(Math.max(...spendTrend)),wechatPeak=wechatTrend.indexOf(Math.max(...wechatTrend));
+    add("circle",{cx:x(spendPeak),cy:y(spendTrend[spendPeak]),r:"6",fill:"#1769e0",stroke:"#fff","stroke-width":"3"});
+    let t=add("text",{x:x(spendPeak)+10,y:y(spendTrend[spendPeak])-13,fill:"#1769e0","font-size":"13","font-weight":"950"});t.textContent="100w+";
+    add("circle",{cx:x(wechatPeak),cy:y(wechatTrend[wechatPeak]),r:"6",fill:"#f47b20",stroke:"#fff","stroke-width":"3"});
+    t=add("text",{x:x(wechatPeak)-10,y:y(wechatTrend[wechatPeak])+27,"text-anchor":"end",fill:"#d86514","font-size":"12","font-weight":"900"});t.textContent="微信热度峰值";
+  }
+  function drawSeaTrend(){
+    const svg=document.getElementById("seaTrend");if(!svg)return;
+    const W=svg.clientWidth||420,H=svg.clientHeight||160,m={l:8,r:8,t:25,b:18},iw=W-m.l-m.r,ih=H-m.t-m.b,max=108;
+    svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.innerHTML="";
+    const NS="http://www.w3.org/2000/svg",add=(tag,a)=>{const e=document.createElementNS(NS,tag);Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));svg.appendChild(e);return e};
+    const spend=seaSpend.map(v=>v/46*100),x=i=>m.l+i/(spend.length-1)*iw,y=v=>m.t+ih-v/max*ih;
+    for(let i=0;i<4;i++){const yy=m.t+ih*i/3;add("line",{x1:m.l,y1:yy,x2:W-m.r,y2:yy,stroke:"#dce6ef","stroke-dasharray":"3 5"})}
+    [{name:"海参广告消耗",data:spend,color:"#1769e0"},{name:"国足微信热度",data:seaHeat,color:"#f47b20"}].forEach(s=>{const d=s.data.map((v,i)=>(i?"L":"M")+x(i)+","+y(v)).join(" ");add("path",{d,fill:"none",stroke:s.color,"stroke-width":"2.8","stroke-linecap":"round","stroke-linejoin":"round"})});
+    add("line",{x1:10,y1:10,x2:26,y2:10,stroke:"#1769e0","stroke-width":"4","stroke-linecap":"round"});let t=add("text",{x:31,y:14,fill:"#4c6078","font-size":"9","font-weight":"800"});t.textContent="海参广告消耗";
+    add("line",{x1:122,y1:10,x2:138,y2:10,stroke:"#f47b20","stroke-width":"4","stroke-linecap":"round"});t=add("text",{x:143,y:14,fill:"#4c6078","font-size":"9","font-weight":"800"});t.textContent="国足微信热度";
+    [0,21,34].forEach((i,j)=>{t=add("text",{x:x(i),y:H-3,"text-anchor":j===0?"start":j===2?"end":"middle",fill:"#8291a3","font-size":"8"});t.textContent=["05/11","06/01","06/14"][j]});
+  }
+  function syncBreakoutVisuals(){
+    const shot=document.querySelector(".viral-shot"),chart=document.querySelector(".breakout-visual .chart-card");
+    if(!shot||!chart)return;
+    if(window.innerWidth>1000){chart.style.height=Math.round(shot.getBoundingClientRect().height)+"px"}else{chart.style.removeProperty("height")}
+  }
+  function layoutAndDraw(){syncBreakoutVisuals();requestAnimationFrame(()=>{draw();drawSeaTrend()})}
+  window.addEventListener("load",layoutAndDraw);window.addEventListener("resize",layoutAndDraw);
+  document.querySelectorAll(".case-breakout img,.case-matrix img").forEach(img=>img.addEventListener("load",layoutAndDraw));
+  const viralShot=document.querySelector(".viral-shot");
+  if(window.ResizeObserver&&viralShot)new ResizeObserver(layoutAndDraw).observe(viralShot);
+  const navLinks=[...document.querySelectorAll('.doc-nav a')];
+  const sectionMap=new Map(navLinks.map(a=>[a.getAttribute('href').slice(1),a]));
+  if(window.IntersectionObserver){
+    const observer=new IntersectionObserver(entries=>{entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio).slice(0,1).forEach(e=>{navLinks.forEach(a=>a.classList.remove('active'));const link=sectionMap.get(e.target.id);if(link)link.classList.add('active')})},{rootMargin:'-12% 0px -68% 0px',threshold:[0,.1,.3,.6]});
+    document.querySelectorAll('[data-nav-section]').forEach(s=>observer.observe(s));
+  }
+})();
+</script>
+</body>
+</html>
